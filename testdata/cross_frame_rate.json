@@ -1,0 +1,161 @@
+{
+  "OTIO_SCHEMA": "Timeline.1",
+  "name": "cross-frame-rate",
+  "global_start_time": {
+    "OTIO_SCHEMA": "RationalTime.1",
+    "rate": 30.0,
+    "value": 0.0
+  },
+  "metadata": {
+    "project": {
+      "label": "mixed 23.976 / 24 / 29.97 / 30"
+    }
+  },
+  "tracks": {
+    "OTIO_SCHEMA": "Stack.1",
+    "name": "tracks",
+    "children": [
+      {
+        "OTIO_SCHEMA": "Track.1",
+        "name": "V1",
+        "source_range": {
+          "OTIO_SCHEMA": "TimeRange.1",
+          "start_time": {
+            "OTIO_SCHEMA": "RationalTime.1",
+            "rate": 30.0,
+            "value": 0.0
+          },
+          "duration": {
+            "OTIO_SCHEMA": "RationalTime.1",
+            "rate": 30.0,
+            "value": 120.0
+          }
+        },
+        "children": [
+          {
+            "OTIO_SCHEMA": "Clip.2",
+            "name": "film-at-24",
+            "source_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 24.0,
+                "value": 24.0
+              },
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 24.0,
+                "value": 72.0
+              }
+            },
+            "metadata": {
+              "source": {
+                "label": "24 fps picture"
+              }
+            }
+          },
+          {
+            "OTIO_SCHEMA": "Gap.1",
+            "name": "ntsc-tail",
+            "source_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 29.97,
+                "value": 0.0
+              },
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 29.97,
+                "value": 30.0
+              }
+            }
+          }
+        ],
+        "markers": [
+          {
+            "OTIO_SCHEMA": "Marker.2",
+            "name": "24 fps note on 23.976 ruler",
+            "color": "GREEN",
+            "marked_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 23.976,
+                "value": 24.0
+              },
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 24.0,
+                "value": 12.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "OTIO_SCHEMA": "Track.1",
+        "name": "A1",
+        "children": [
+          {
+            "OTIO_SCHEMA": "Clip.2",
+            "name": "audio-at-30",
+            "source_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 30.0,
+                "value": 300.0
+              },
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 30.0,
+                "value": 120.0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "markers": [
+      {
+        "OTIO_SCHEMA": "Marker.2",
+        "name": "stack marker",
+        "color": "YELLOW",
+        "marked_range": {
+          "OTIO_SCHEMA": "TimeRange.1",
+          "start_time": {
+            "OTIO_SCHEMA": "RationalTime.1",
+            "rate": 30.0,
+            "value": 15.0
+          },
+          "duration": {
+            "OTIO_SCHEMA": "RationalTime.1",
+            "rate": 23.976,
+            "value": 48.0
+          }
+        }
+      }
+    ]
+  },
+  "markers": [
+    {
+      "OTIO_SCHEMA": "Marker.2",
+      "name": "timeline marker",
+      "color": "RED",
+      "marked_range": {
+        "OTIO_SCHEMA": "TimeRange.1",
+        "start_time": {
+          "OTIO_SCHEMA": "RationalTime.1",
+          "rate": 25.0,
+          "value": 25.0
+        },
+        "duration": {
+          "OTIO_SCHEMA": "RationalTime.1",
+          "rate": 30.0,
+          "value": 30.0
+        }
+      }
+    }
+  ]
+}

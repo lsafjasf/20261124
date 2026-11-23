@@ -1,0 +1,153 @@
+{
+  "OTIO_SCHEMA": "Timeline.1",
+  "name": "overlapping-markers",
+  "tracks": {
+    "OTIO_SCHEMA": "Stack.1",
+    "name": "tracks",
+    "children": [
+      {
+        "OTIO_SCHEMA": "Track.1",
+        "name": "V1",
+        "children": [
+          {
+            "OTIO_SCHEMA": "Clip.2",
+            "name": "marked-shot",
+            "source_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 24.0,
+                "value": 0.0
+              },
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 24.0,
+                "value": 240.0
+              }
+            },
+            "markers": [
+              {
+                "OTIO_SCHEMA": "Marker.2",
+                "name": "review-a",
+                "color": "RED",
+                "metadata": {
+                  "note": "first review window"
+                },
+                "marked_range": {
+                  "OTIO_SCHEMA": "TimeRange.1",
+                  "start_time": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 24.0,
+                    "value": 24.0
+                  },
+                  "duration": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 24.0,
+                    "value": 96.0
+                  }
+                }
+              },
+              {
+                "OTIO_SCHEMA": "Marker.2",
+                "name": "review-b",
+                "color": "GREEN",
+                "marked_range": {
+                  "OTIO_SCHEMA": "TimeRange.1",
+                  "start_time": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 30.0,
+                    "value": 90.0
+                  },
+                  "duration": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 29.97,
+                    "value": 120.0
+                  }
+                }
+              },
+              {
+                "OTIO_SCHEMA": "Marker.2",
+                "name": "review-c",
+                "color": "BLUE",
+                "marked_range": {
+                  "OTIO_SCHEMA": "TimeRange.1",
+                  "start_time": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 24.0,
+                    "value": 156.0
+                  },
+                  "duration": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 24.0,
+                    "value": 24.0
+                  }
+                }
+              },
+              {
+                "OTIO_SCHEMA": "Marker.2",
+                "name": "touching-c",
+                "color": "CYAN",
+                "marked_range": {
+                  "OTIO_SCHEMA": "TimeRange.1",
+                  "start_time": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 24.0,
+                    "value": 180.0
+                  },
+                  "duration": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 24.0,
+                    "value": 12.0
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "OTIO_SCHEMA": "Track.1",
+        "name": "V2",
+        "markers": [
+          {
+            "OTIO_SCHEMA": "Marker.2",
+            "name": "track-wide",
+            "color": "YELLOW",
+            "marked_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 25.0,
+                "value": 0.0
+              },
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 25.0,
+                "value": 250.0
+              }
+            }
+          }
+        ],
+        "children": [
+          {
+            "OTIO_SCHEMA": "Gap.1",
+            "name": "slate",
+            "source_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 24.0,
+                "value": 0.0
+              },
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 24.0,
+                "value": 240.0
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
