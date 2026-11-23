@@ -1,0 +1,18 @@
+{
+  "sequence": "demo_seq",
+  "frameRate": "25",
+  "speedCurve": [
+    {"name": "normal",  "srcStart": 0,  "hold": 10, "speed": "1"},
+    {"name": "fast",    "srcStart": 10, "hold": 20, "speed": "2"},
+    {"name": "freeze",  "srcStart": 30, "hold": 5,  "speed": "0"},
+    {"name": "reverse", "srcStart": 35, "hold": 10, "speed": "-1"},
+    {"name": "slow",    "srcStart": 45, "hold": 4,  "speed": "1/2"}
+  ],
+  "events": [
+    {"id": "sub_hello", "kind": "subtitle", "start": 2,  "end": 8,  "text": "hello"},
+    {"id": "mk_fast",   "kind": "marker",   "start": 15, "text": "2x point"},
+    {"id": "mk_freeze", "kind": "marker",   "start": 33, "text": "on the freeze"},
+    {"id": "sub_rev",   "kind": "subtitle", "start": 40, "end": 44, "text": "reversed"},
+    {"id": "mk_slow",   "kind": "marker",   "start": 47, "text": "half speed"}
+  ]
+}
