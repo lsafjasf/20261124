@@ -1,0 +1,26 @@
+{
+  "tracks": [
+    {"id": "V1", "name": "Video 1"},
+    {"id": "V2", "name": "Video 2"}
+  ],
+  "clips": [
+    {
+      "id": "clip-main",
+      "trackId": "V1",
+      "name": "Main angle",
+      "start": 0,
+      "duration": 10
+    },
+    {
+      "id": "clip-lower-third",
+      "trackId": "V2",
+      "name": "Lower third",
+      "start": 3,
+      "duration": 4
+    }
+  ],
+  "markers": [
+    {"id": "marker-intro", "time": 0, "label": "Intro", "color": "blue"},
+    {"id": "marker-review", "time": 7, "label": "Review", "color": "yellow"}
+  ]
+}

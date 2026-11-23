@@ -1,0 +1,23 @@
+{
+  "tracks": [
+    {"id": "V1", "name": "Video 1"},
+    {"id": "V2", "name": "Video 2"}
+  ],
+  "clips": [
+    {
+      "id": "clip-interview",
+      "trackId": "V1",
+      "name": "Interview",
+      "start": 0,
+      "duration": 12,
+      "params": {"opacity": 1}
+    },
+    {
+      "id": "clip-broll",
+      "trackId": "V2",
+      "name": "B-roll",
+      "start": 20,
+      "duration": 5
+    }
+  ]
+}

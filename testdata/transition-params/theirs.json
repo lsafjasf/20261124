@@ -1,0 +1,19 @@
+{
+  "tracks": [{"id": "V1", "name": "Video 1"}],
+  "clips": [
+    {
+      "id": "clip-fade",
+      "trackId": "V1",
+      "name": "Fade shot",
+      "start": 0,
+      "duration": 8,
+      "transitions": [
+        {
+          "id": "fade-in",
+          "kind": "fade",
+          "params": {"duration": 500, "easing": "ease-in"}
+        }
+      ]
+    }
+  ]
+}

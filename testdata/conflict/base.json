@@ -1,0 +1,12 @@
+{
+  "tracks": [{"id": "V1", "name": "Video 1"}],
+  "clips": [
+    {
+      "id": "clip-hero",
+      "trackId": "V1",
+      "name": "Hero",
+      "start": 5,
+      "duration": 6
+    }
+  ]
+}
