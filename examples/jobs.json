@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    {
+      "path": "/path/to/program.ac3",
+      "dialnorm": 27,
+      "boundaries": [48, 120]
+    },
+    {
+      "path": "/path/to/ad_pod.ac3",
+      "dialnorm": 24
+    }
+  ]
+}
