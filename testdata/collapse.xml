@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ebuCoreMain xmlns="urn:ebu:metadata-schema:ebuCore_2014">
+  <coreMetadata>
+    <format>
+      <audioFormatExtended>
+
+        <audioObject audioObjectID="AO_0001" audioObjectName="Obj_CartMismatch">
+          <audioPackFormatIDRef>AP_0001</audioPackFormatIDRef>
+        </audioObject>
+        <audioObject audioObjectID="AO_0002" audioObjectName="Obj_Height">
+          <audioPackFormatIDRef>AP_0002</audioPackFormatIDRef>
+        </audioObject>
+        <audioObject audioObjectID="AO_0003" audioObjectName="Obj_NoPos">
+          <audioPackFormatIDRef>AP_0003</audioPackFormatIDRef>
+        </audioObject>
+        <audioObject audioObjectID="AO_0004" audioObjectName="Obj_Lss">
+          <audioPackFormatIDRef>AP_0004</audioPackFormatIDRef>
+        </audioObject>
+        <audioObject audioObjectID="AO_0005" audioObjectName="Obj_OK">
+          <audioPackFormatIDRef>AP_0005</audioPackFormatIDRef>
+        </audioObject>
+
+        <audioPackFormat audioPackFormatID="AP_0001" audioPackFormatName="P1" typeLabel="0003">
+          <audioChannelFormatIDRef>AC_0001</audioChannelFormatIDRef>
+        </audioPackFormat>
+        <audioPackFormat audioPackFormatID="AP_0002" audioPackFormatName="P2" typeLabel="0003">
+          <audioChannelFormatIDRef>AC_0002</audioChannelFormatIDRef>
+        </audioPackFormat>
+        <audioPackFormat audioPackFormatID="AP_0003" audioPackFormatName="P3" typeLabel="0003">
+          <audioChannelFormatIDRef>AC_0003</audioChannelFormatIDRef>
+        </audioPackFormat>
+        <audioPackFormat audioPackFormatID="AP_0004" audioPackFormatName="P4" typeLabel="0001">
+          <audioChannelFormatIDRef>AC_0004</audioChannelFormatIDRef>
+        </audioPackFormat>
+        <audioPackFormat audioPackFormatID="AP_0005" audioPackFormatName="P5" typeLabel="0003">
+          <audioChannelFormatIDRef>AC_0005</audioChannelFormatIDRef>
+        </audioPackFormat>
+
+        <audioChannelFormat audioChannelFormatID="AC_0001" audioChannelFormatName="CH_CartMismatch" typeLabel="0003" coordinateType="polar">
+          <audioBlockFormat audioBlockFormatID="AB_0001_01" rtime="00:00:00.000" duration="00:00:05.000">
+            <position coordinate="X">-0.5</position>
+            <position coordinate="Y">0.866</position>
+            <position coordinate="Z">0.0</position>
+          </audioBlockFormat>
+        </audioChannelFormat>
+
+        <audioChannelFormat audioChannelFormatID="AC_0002" audioChannelFormatName="CH_Height" typeLabel="0003" coordinateType="polar">
+          <audioBlockFormat audioBlockFormatID="AB_0002_01" rtime="00:00:00.000" duration="00:00:05.000">
+            <position coordinate="azimuth">10.0</position>
+            <position coordinate="elevation">45.0</position>
+            <position coordinate="distance">1.0</position>
+          </audioBlockFormat>
+        </audioChannelFormat>
+
+        <audioChannelFormat audioChannelFormatID="AC_0003" audioChannelFormatName="CH_NoPos" typeLabel="0003" coordinateType="polar">
+          <audioBlockFormat audioBlockFormatID="AB_0003_01" rtime="00:00:00.000" duration="00:00:05.000">
+            <gain>1.0</gain>
+          </audioBlockFormat>
+        </audioChannelFormat>
+
+        <audioChannelFormat audioChannelFormatID="AC_0004" audioChannelFormatName="CH_Lss" typeLabel="0001">
+          <speakerLabel>Lss</speakerLabel>
+          <audioBlockFormat audioBlockFormatID="AB_0004_01" rtime="00:00:00.000" duration="00:00:05.000">
+            <position coordinate="azimuth">90.0</position>
+            <position coordinate="elevation">0.0</position>
+          </audioBlockFormat>
+        </audioChannelFormat>
+
+        <audioChannelFormat audioChannelFormatID="AC_0005" audioChannelFormatName="CH_OK" typeLabel="0003" coordinateType="polar">
+          <audioBlockFormat audioBlockFormatID="AB_0005_01" rtime="00:00:00.000" duration="00:00:02.500">
+            <position coordinate="azimuth">30.0</position>
+            <position coordinate="elevation">0.0</position>
+            <position coordinate="distance">1.0</position>
+          </audioBlockFormat>
+          <audioBlockFormat audioBlockFormatID="AB_0005_02" rtime="00:00:02.500" duration="00:00:02.500">
+            <position coordinate="azimuth">-110.0</position>
+            <position coordinate="elevation">0.0</position>
+            <position coordinate="distance">1.0</position>
+          </audioBlockFormat>
+        </audioChannelFormat>
+
+      </audioFormatExtended>
+    </format>
+  </coreMetadata>
+</ebuCoreMain>
