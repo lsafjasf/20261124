@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "tool": "dual-master/1.0.0",
+  "project": "Dual-Master Validation",
+  "source_manifest": "source/manifest.json",
+  "working_space": "rec2020-linear",
+  "config": {
+    "reference_white_nits": 100,
+    "sdr_peak_nits": 100,
+    "hdr_peak_nits": 1000,
+    "hdr_knee_nits": 900,
+    "sdr_gamma": 2.4,
+    "legal_black": 64,
+    "legal_white": 940,
+    "bits": 10,
+    "dither": true
+  },
+  "sdr_profile": {
+    "name": "SDR",
+    "primaries": "BT.709",
+    "white_point": "D65",
+    "transfer": "BT.1886",
+    "reference_white_nits": 100,
+    "peak_nits": 100,
+    "range": "video-limited",
+    "bits": 10,
+    "black_code": 64,
+    "white_code": 940,
+    "master_format": "rgb10le interleaved uint16"
+  },
+  "hdr10_profile": {
+    "name": "HDR10",
+    "primaries": "BT.2020",
+    "white_point": "D65",
+    "transfer": "SMPTE ST 2084 (PQ)",
+    "reference_white_nits": 100,
+    "peak_nits": 1000,
+    "range": "video-limited",
+    "bits": 10,
+    "black_code": 64,
+    "white_code": 940,
+    "master_format": "rgb10le interleaved uint16",
+    "max_cll_nits": 800,
+    "max_fall_nits": 50.08944234906585,
+    "mastering_display_min_nits": 0.0001,
+    "mastering_display_max_nits": 1000
+  },
+  "frames": [
+    {
+      "shot": "S001_NIGHT",
+      "frame": 1,
+      "timecode": "00:00:00:00",
+      "description": "夜景：城市窗灯与 18% 中灰测试区",
+      "width": 640,
+      "height": 360,
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "source": {
+        "file": "source/frames/S001_NIGHT_0001.pfm",
+        "bytes": 2764816,
+        "sha256": "3c8db8f69515c05be0f8087db4c90973cd0e1af001fb101af232ddeef46d2340"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "window_1",
+            "rect": {
+              "x": 118,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "window_2",
+            "rect": {
+              "x": 147,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "window_3",
+            "rect": {
+              "x": 176,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "window_4",
+            "rect": {
+              "x": 205,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "sdr": {
+        "file": "sdr/S001_NIGHT/S001_NIGHT_0001.rgb10le",
+        "bytes": 1382400,
+        "sha256": "ba3069e63fbbc6e25cfde82d7ab939bf927a6cae7f1a2a3791526ec18f6c7cdc"
+      },
+      "hdr10": {
+        "file": "hdr10/S001_NIGHT/S001_NIGHT_0001.rgb10le",
+        "bytes": 1382400,
+        "sha256": "45cbb306f2451f597f49c121d57861a21b6c815f2637a08413d611b108eb4bc8"
+      }
+    },
+    {
+      "shot": "S001_NIGHT",
+      "frame": 2,
+      "timecode": "00:00:00:01",
+      "description": "夜景：城市窗灯与 18% 中灰测试区",
+      "width": 640,
+      "height": 360,
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "source": {
+        "file": "source/frames/S001_NIGHT_0002.pfm",
+        "bytes": 2764816,
+        "sha256": "a39e45b143fe7f573ff95bb5c826df11df0071da199d22d5cd58d703c5a03acb"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "window_1",
+            "rect": {
+              "x": 118,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "window_2",
+            "rect": {
+              "x": 147,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "window_3",
+            "rect": {
+              "x": 176,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "window_4",
+            "rect": {
+              "x": 205,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "sdr": {
+        "file": "sdr/S001_NIGHT/S001_NIGHT_0002.rgb10le",
+        "bytes": 1382400,
+        "sha256": "d443a228d5cec0bad3a597decbf717f3e92da00f1c4378f1d4fc9f3445f4605e"
+      },
+      "hdr10": {
+        "file": "hdr10/S001_NIGHT/S001_NIGHT_0002.rgb10le",
+        "bytes": 1382400,
+        "sha256": "757c6114d969a6d6af562963a7120beffd832faeee0a313f9fe54db25b9a0e6f"
+      }
+    },
+    {
+      "shot": "S002_WINDOW",
+      "frame": 1,
+      "timecode": "00:00:00:00",
+      "description": "窗外高光：四级 100/200/400/800 nit 窗格",
+      "width": 640,
+      "height": 360,
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "source": {
+        "file": "source/frames/S002_WINDOW_0001.pfm",
+        "bytes": 2764816,
+        "sha256": "f3ea8707d211d7910aba039e7a2f60ca3741cf16b59ce49b2a9b45006a062c8b"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "outside_pane_1",
+            "rect": {
+              "x": 352,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "outside_pane_2",
+            "rect": {
+              "x": 412,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "outside_pane_3",
+            "rect": {
+              "x": 472,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "outside_pane_4",
+            "rect": {
+              "x": 532,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "sdr": {
+        "file": "sdr/S002_WINDOW/S002_WINDOW_0001.rgb10le",
+        "bytes": 1382400,
+        "sha256": "ade23ead2516a6373502b27f39b184cfa86a08b50941014121267d9efdc9c9b3"
+      },
+      "hdr10": {
+        "file": "hdr10/S002_WINDOW/S002_WINDOW_0001.rgb10le",
+        "bytes": 1382400,
+        "sha256": "83961b83a0101e8772ab764ae06f1b48b84b4384ebcaf0e14010ea95d7a7ec65"
+      }
+    },
+    {
+      "shot": "S002_WINDOW",
+      "frame": 2,
+      "timecode": "00:00:00:01",
+      "description": "窗外高光：四级 100/200/400/800 nit 窗格",
+      "width": 640,
+      "height": 360,
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "source": {
+        "file": "source/frames/S002_WINDOW_0002.pfm",
+        "bytes": 2764816,
+        "sha256": "fe328d5a08be22974ab4344dcbb61c507ce17c1b14e346de2bc6ec090d2935db"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "outside_pane_1",
+            "rect": {
+              "x": 352,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "outside_pane_2",
+            "rect": {
+              "x": 412,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "outside_pane_3",
+            "rect": {
+              "x": 472,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "outside_pane_4",
+            "rect": {
+              "x": 532,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "sdr": {
+        "file": "sdr/S002_WINDOW/S002_WINDOW_0002.rgb10le",
+        "bytes": 1382400,
+        "sha256": "7bc44b3686bb28efcc31d73a7e778e49701abe492a940d44d88fc2739597d289"
+      },
+      "hdr10": {
+        "file": "hdr10/S002_WINDOW/S002_WINDOW_0002.rgb10le",
+        "bytes": 1382400,
+        "sha256": "13be0002b6471a6a90bb64eb9e80b0e8599f5da08c57240718af3df7bd6f5d55"
+      }
+    },
+    {
+      "shot": "S003_SKIN",
+      "frame": 1,
+      "timecode": "00:00:00:00",
+      "description": "肤色特写：暖肤色与中性灰参照",
+      "width": 640,
+      "height": 360,
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "source": {
+        "file": "source/frames/S003_SKIN_0001.pfm",
+        "bytes": 2764816,
+        "sha256": "ae6f743fc2025cbaf6ad282e97d3daa9900bd98071b358020e33a44892a2c03d"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "skin": {
+          "x": 282,
+          "y": 150,
+          "width": 58,
+          "height": 54
+        }
+      },
+      "sdr": {
+        "file": "sdr/S003_SKIN/S003_SKIN_0001.rgb10le",
+        "bytes": 1382400,
+        "sha256": "2a17a48ecbd3b136f816c67a3a9732ef981ce5d68fb765b0a2ec21962b2df028"
+      },
+      "hdr10": {
+        "file": "hdr10/S003_SKIN/S003_SKIN_0001.rgb10le",
+        "bytes": 1382400,
+        "sha256": "95c61bcfce033483506abd839f1ed6e957a7243698755e8b9fa8aa07bc84f030"
+      }
+    },
+    {
+      "shot": "S003_SKIN",
+      "frame": 2,
+      "timecode": "00:00:00:01",
+      "description": "肤色特写：暖肤色与中性灰参照",
+      "width": 640,
+      "height": 360,
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "source": {
+        "file": "source/frames/S003_SKIN_0002.pfm",
+        "bytes": 2764816,
+        "sha256": "ae6f743fc2025cbaf6ad282e97d3daa9900bd98071b358020e33a44892a2c03d"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "skin": {
+          "x": 282,
+          "y": 150,
+          "width": 58,
+          "height": 54
+        }
+      },
+      "sdr": {
+        "file": "sdr/S003_SKIN/S003_SKIN_0002.rgb10le",
+        "bytes": 1382400,
+        "sha256": "2a17a48ecbd3b136f816c67a3a9732ef981ce5d68fb765b0a2ec21962b2df028"
+      },
+      "hdr10": {
+        "file": "hdr10/S003_SKIN/S003_SKIN_0002.rgb10le",
+        "bytes": 1382400,
+        "sha256": "95c61bcfce033483506abd839f1ed6e957a7243698755e8b9fa8aa07bc84f030"
+      }
+    }
+  ]
+}

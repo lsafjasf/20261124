@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "project": "Dual-Master Validation",
+  "working_space": "rec2020-linear",
+  "config": {
+    "reference_white_nits": 100,
+    "sdr_peak_nits": 100,
+    "hdr_peak_nits": 1000,
+    "hdr_knee_nits": 900,
+    "sdr_gamma": 2.4,
+    "legal_black": 64,
+    "legal_white": 940,
+    "bits": 10,
+    "dither": true
+  },
+  "frames": [
+    {
+      "shot": "S001_NIGHT",
+      "frame": 1,
+      "file": "frames/S001_NIGHT_0001.pfm",
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "window_1",
+            "rect": {
+              "x": 118,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "window_2",
+            "rect": {
+              "x": 147,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "window_3",
+            "rect": {
+              "x": 176,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "window_4",
+            "rect": {
+              "x": 205,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "timecode": "00:00:00:00",
+      "description": "夜景：城市窗灯与 18% 中灰测试区"
+    },
+    {
+      "shot": "S001_NIGHT",
+      "frame": 2,
+      "file": "frames/S001_NIGHT_0002.pfm",
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "window_1",
+            "rect": {
+              "x": 118,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "window_2",
+            "rect": {
+              "x": 147,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "window_3",
+            "rect": {
+              "x": 176,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "window_4",
+            "rect": {
+              "x": 205,
+              "y": 260,
+              "width": 17,
+              "height": 22
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "timecode": "00:00:00:01",
+      "description": "夜景：城市窗灯与 18% 中灰测试区"
+    },
+    {
+      "shot": "S002_WINDOW",
+      "frame": 1,
+      "file": "frames/S002_WINDOW_0001.pfm",
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "outside_pane_1",
+            "rect": {
+              "x": 352,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "outside_pane_2",
+            "rect": {
+              "x": 412,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "outside_pane_3",
+            "rect": {
+              "x": 472,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "outside_pane_4",
+            "rect": {
+              "x": 532,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "timecode": "00:00:00:00",
+      "description": "窗外高光：四级 100/200/400/800 nit 窗格"
+    },
+    {
+      "shot": "S002_WINDOW",
+      "frame": 2,
+      "file": "frames/S002_WINDOW_0002.pfm",
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "highlights": [
+          {
+            "name": "outside_pane_1",
+            "rect": {
+              "x": 352,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 100
+          },
+          {
+            "name": "outside_pane_2",
+            "rect": {
+              "x": 412,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 200
+          },
+          {
+            "name": "outside_pane_3",
+            "rect": {
+              "x": 472,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 400
+          },
+          {
+            "name": "outside_pane_4",
+            "rect": {
+              "x": 532,
+              "y": 54,
+              "width": 54,
+              "height": 136
+            },
+            "expected_nits": 800
+          }
+        ]
+      },
+      "timecode": "00:00:00:01",
+      "description": "窗外高光：四级 100/200/400/800 nit 窗格"
+    },
+    {
+      "shot": "S003_SKIN",
+      "frame": 1,
+      "file": "frames/S003_SKIN_0001.pfm",
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "skin": {
+          "x": 282,
+          "y": 150,
+          "width": 58,
+          "height": 54
+        }
+      },
+      "timecode": "00:00:00:00",
+      "description": "肤色特写：暖肤色与中性灰参照"
+    },
+    {
+      "shot": "S003_SKIN",
+      "frame": 2,
+      "file": "frames/S003_SKIN_0002.pfm",
+      "subtitle": {
+        "x": 80,
+        "y": 310,
+        "width": 480,
+        "height": 30,
+        "anchor": "bottom-center"
+      },
+      "analysis": {
+        "middle_gray": {
+          "x": 32,
+          "y": 32,
+          "width": 64,
+          "height": 64
+        },
+        "skin": {
+          "x": 282,
+          "y": 150,
+          "width": 58,
+          "height": 54
+        }
+      },
+      "timecode": "00:00:00:01",
+      "description": "肤色特写：暖肤色与中性灰参照"
+    }
+  ]
+}
