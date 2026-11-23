@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fcpxml xmlns="http://www.apple.com/DTDs/FinalCutProXML/1.0" version="1.10">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p25" frameDuration="1/25s" width="1920" height="1080"/>
+    <asset id="r2" name="shot-a" duration="200/25s" hasVideo="1">
+      <media-rep kind="original-media" src="media/shot-a.mov"/>
+    </asset>
+    <asset id="r3" name="speed-source" duration="200/25s" hasVideo="1">
+      <media-rep kind="original-media" src="media/speed-source.mov"/>
+    </asset>
+    <asset id="r4" name="music" duration="300/25s" hasAudio="1">
+      <media-rep kind="original-media" src="media/music.mov"/>
+    </asset>
+    <effect id="r6" name="Color Correct" uid="ColorCorrect"/>
+  </resources>
+  <library>
+    <event name="Audit">
+      <project name="TransitionAndSpeed">
+        <sequence format="r1" duration="240/25s" name="Main">
+          <spine>
+            <asset-clip ref="r2" name="A" offset="0s" duration="100/25s" start="0s">
+              <filter-video ref="r6" name="Color Correct">
+                <param key="amount" value="0.5"/>
+              </filter-video>
+            </asset-clip>
+            <asset-clip ref="r2" name="B" offset="104/25s" duration="80/25s" start="100/25s"/>
+            <asset-clip ref="r3" name="Speed" offset="184/25s" duration="40/25s" start="0s"/>
+            <clip ref="r4" name="Music" lane="1" offset="0s" duration="224/25s" start="0s">
+              <audio ref="r4" lane="1" offset="0s" duration="224/25s" start="0s" role="music"/>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
