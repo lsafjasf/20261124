@@ -1,0 +1,8 @@
+{
+  "id": "co-2026-11-24-b",
+  "operations": [
+    {"clipId": "c1", "action": "trimEnd", "delta": -800},
+    {"clipId": "c2", "action": "delete"},
+    {"clipId": "c2", "action": "trimStart", "delta": 300}
+  ]
+}

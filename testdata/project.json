@@ -1,0 +1,24 @@
+{
+  "id": "proj-001",
+  "name": "示例剪辑工程",
+  "tracks": [
+    {
+      "id": "video-main",
+      "name": "主视频轨",
+      "clips": [
+        {"id": "c1", "name": "片头", "start": 0, "length": 2000, "sourceIn": 0},
+        {"id": "c2", "name": "正片", "start": 2000, "length": 3000, "sourceIn": 0},
+        {"id": "c3", "name": "片尾", "start": 5000, "length": 1500, "sourceIn": 0}
+      ]
+    },
+    {
+      "id": "subs",
+      "name": "字幕轨（子轨）",
+      "parentId": "video-main",
+      "clips": [
+        {"id": "s1", "name": "标题", "start": 300, "length": 1000, "sourceIn": 0},
+        {"id": "s2", "name": "解说", "start": 2200, "length": 2000, "sourceIn": 0}
+      ]
+    }
+  ]
+}
