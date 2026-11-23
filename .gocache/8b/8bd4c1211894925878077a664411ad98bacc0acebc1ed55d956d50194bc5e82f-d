@@ -1,0 +1,6 @@
+=== RUN   ExampleBuild
+--- PASS: ExampleBuild (0.00s)
+=== RUN   ExampleBuild_rejected
+--- PASS: ExampleBuild_rejected (0.00s)
+PASS
+ok  	timemap/timemap	0.002s

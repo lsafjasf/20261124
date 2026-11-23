@@ -1,0 +1,10 @@
+=== RUN   TestForward24To30
+--- PASS: TestForward24To30 (0.00s)
+=== RUN   TestFreeze24To30
+--- PASS: TestFreeze24To30 (0.00s)
+=== RUN   TestReverse24To30
+--- PASS: TestReverse24To30 (0.00s)
+=== RUN   TestSpeedStep24To30
+--- PASS: TestSpeedStep24To30 (0.00s)
+PASS
+ok  	timemap/timemap	0.003s

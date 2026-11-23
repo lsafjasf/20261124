@@ -1,0 +1,16 @@
+=== RUN   TestRejectNonMonotonicKeyframes
+--- PASS: TestRejectNonMonotonicKeyframes (0.00s)
+=== RUN   TestRejectOutOfBoundsKeyframe
+--- PASS: TestRejectOutOfBoundsKeyframe (0.00s)
+=== RUN   TestRejectNegativeSourceKeyframe
+--- PASS: TestRejectNegativeSourceKeyframe (0.00s)
+=== RUN   TestRejectSubFrameLoop
+--- PASS: TestRejectSubFrameLoop (0.00s)
+=== RUN   TestAllowOneFrameReverseRun
+--- PASS: TestAllowOneFrameReverseRun (0.00s)
+=== RUN   TestRejectOutputBeyondKeyframes
+--- PASS: TestRejectOutputBeyondKeyframes (0.00s)
+=== RUN   TestRejectInvalidSpec
+--- PASS: TestRejectInvalidSpec (0.00s)
+PASS
+ok  	timemap/timemap	0.002s

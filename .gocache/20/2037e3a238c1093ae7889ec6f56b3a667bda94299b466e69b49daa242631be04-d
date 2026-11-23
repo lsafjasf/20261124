@@ -1,0 +1,6 @@
+./build.go
+./errors.go
+./render.go
+./spec.go
+./table.go
+./timemap_test.go
