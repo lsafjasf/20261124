@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fcpxml version="1.10">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p30" frameDuration="1/30s" width="1920" height="1080"/>
+    <format id="r2" name="FFVideoFormat1080p24" frameDuration="1/24s" width="1920" height="1080"/>
+    <asset id="r10" name="Opening" format="r1" duration="20s" hasVideo="1"/>
+    <asset id="r11" name="NestedA" format="r2" duration="20s" hasVideo="1"/>
+    <asset id="r12" name="NestedB" format="r2" duration="20s" hasVideo="1"/>
+    <effect id="r20" name="Cross Dissolve" uid="FFCrossDissolve"/>
+  </resources>
+  <library>
+    <event name="Demo">
+      <project name="Nested project">
+        <sequence id="sqTop" name="Top" format="r1" duration="10s" tcStart="10s" tcFormat="NDF">
+          <spine>
+            <asset-clip name="opening" ref="r10" offset="10s" start="0s" duration="2s"/>
+            <transition name="dissolve" offset="23/2s" duration="1s">
+              <filter-video ref="r20" name="Cross Dissolve"/>
+            </transition>
+            <clip name="compound" offset="12s" start="1s" duration="6s">
+              <sequence id="sqNested" name="Compound" format="r2" duration="6s" tcStart="1s">
+                <spine>
+                  <clip name="negative-handle" offset="1s" start="5s" duration="4s">
+                    <sequence id="sqNegative" name="Negative" format="r2" duration="4s" tcStart="5s">
+                      <spine>
+                        <asset-clip name="negative" ref="r11" offset="2s" start="0s" duration="5s"/>
+                      </spine>
+                    </sequence>
+                  </clip>
+                  <asset-clip name="tail" ref="r12" offset="5s" start="0s" duration="2s"/>
+                </spine>
+              </sequence>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
