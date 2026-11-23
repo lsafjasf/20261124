@@ -1,0 +1,37 @@
+{
+  "fps": 25,
+  "minOverlapMs": 120,
+  "candidateThreshold": 0.38,
+  "minTextSimilarity": 0.34,
+  "manualReviewBelow": 0.72,
+  "manualRegionBelow": 0.25,
+  "manualTextBelow": 0.72,
+  "manualShortTextRunes": 3,
+  "minRegionOverlap": 0,
+  "tracks": [
+    {
+      "id": "forced-narrative",
+      "kind": "forced_narrative",
+      "source": "forced.srt",
+      "language": "zh-Hans",
+      "region": {
+        "x": 0.08,
+        "y": 0.72,
+        "width": 0.84,
+        "height": 0.12
+      }
+    },
+    {
+      "id": "full-subtitles",
+      "kind": "full",
+      "source": "full.srt",
+      "language": "zh-Hans",
+      "region": {
+        "x": 0.08,
+        "y": 0.8,
+        "width": 0.84,
+        "height": 0.12
+      }
+    }
+  ]
+}

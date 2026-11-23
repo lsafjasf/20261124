@@ -1,0 +1,418 @@
+{
+  "schemaVersion": "subtitle-conflict-report/v1",
+  "thresholds": {
+    "fps": 25,
+    "minOverlapMs": 120,
+    "candidateThreshold": 0.38,
+    "minTextSimilarity": 0.34,
+    "manualReviewBelow": 0.72,
+    "manualRegionBelow": 0.25,
+    "manualTextBelow": 0.72,
+    "manualShortTextRunes": 3,
+    "minRegionOverlap": 0
+  },
+  "conflictCount": 3,
+  "manualReviewCount": 1,
+  "conflicts": [
+    {
+      "id": "conflict-001",
+      "timeSegment": {
+        "startMs": 1100,
+        "endMsExclusive": 3000,
+        "startTimecode": "00:00:01,100",
+        "endTimecode": "00:00:03,000"
+      },
+      "region": {
+        "forcedRegion": {
+          "x": 0.08,
+          "y": 0.72,
+          "width": 0.84,
+          "height": 0.12
+        },
+        "fullRegion": {
+          "x": 0.08,
+          "y": 0.8,
+          "width": 0.84,
+          "height": 0.12
+        },
+        "intersection": {
+          "x": 0.08,
+          "y": 0.8,
+          "width": 0.84,
+          "height": 0.04
+        },
+        "intersectionRatio": 0.3333,
+        "score": 0.3333
+      },
+      "tracks": {
+        "forced": {
+          "id": "forced-narrative",
+          "kind": "forced_narrative",
+          "source": "forced.srt",
+          "language": "zh-Hans",
+          "cueId": "1"
+        },
+        "full": {
+          "id": "full-subtitles",
+          "kind": "full",
+          "source": "full.srt",
+          "language": "zh-Hans",
+          "cueId": "1"
+        }
+      },
+      "text": {
+        "forcedText": "列车即将到站",
+        "fullText": "列车即将到达本站",
+        "normalizedForced": "列车即将到站",
+        "normalizedFull": "列车即将到达本站",
+        "editSimilarity": 0.75,
+        "containmentScore": 0.6666666666666667,
+        "bigramDice": 0.6666666666666666,
+        "similarity": 0.7083333333333333,
+        "effectiveSimilarity": 0.7083333333333333,
+        "shortTextAdjusted": false,
+        "shortestTextRunes": 6
+      },
+      "confidence": 0.7062,
+      "needsManualReview": true,
+      "reviewReasons": [
+        "confidence_below_manual_threshold",
+        "text_similarity_below_manual_threshold"
+      ],
+      "frameEvidence": {
+        "fps": 25,
+        "overlap": {
+          "startFrame": 27,
+          "endFrameExclusive": 75,
+          "frameCount": 48
+        },
+        "forcedCue": {
+          "cueId": "1",
+          "startFrame": 27,
+          "endFrameExclusive": 75
+        },
+        "fullCue": {
+          "cueId": "1",
+          "startFrame": 25,
+          "endFrameExclusive": 80
+        },
+        "frameChecks": [
+          {
+            "frame": 27,
+            "forcedActive": true,
+            "fullActive": true
+          },
+          {
+            "frame": 51,
+            "forcedActive": true,
+            "fullActive": true
+          },
+          {
+            "frame": 74,
+            "forcedActive": true,
+            "fullActive": true
+          }
+        ]
+      },
+      "repairSuggestions": [
+        {
+          "priority": 1,
+          "action": "manual_review",
+          "trackId": "forced-narrative",
+          "cueIds": [
+            "1",
+            "1"
+          ],
+          "startFrame": 27,
+          "endFrameExclusive": 75,
+          "startTimecode": "00:00:01,100",
+          "endTimecode": "00:00:03,000",
+          "automatic": false,
+          "rationale": "低置信度候选，先人工逐帧核对字幕内容与排版，不自动修改。"
+        },
+        {
+          "priority": 2,
+          "action": "suppress_forced_narrative_overlap",
+          "trackId": "forced-narrative",
+          "cueIds": [
+            "1"
+          ],
+          "startFrame": 27,
+          "endFrameExclusive": 75,
+          "startTimecode": "00:00:01,100",
+          "endTimecode": "00:00:03,000",
+          "automatic": false,
+          "rationale": "保留完整字幕，仅在证据帧段内隐藏强制叙述；若整条均重合，可删除整条强制叙述 cue。"
+        },
+        {
+          "priority": 3,
+          "action": "suppress_full_subtitle_overlap",
+          "trackId": "full-subtitles",
+          "cueIds": [
+            "1"
+          ],
+          "startFrame": 27,
+          "endFrameExclusive": 75,
+          "startTimecode": "00:00:01,100",
+          "endTimecode": "00:00:03,000",
+          "automatic": false,
+          "rationale": "备选方案：若编辑策略要求保留强制叙述，则在完整字幕轨隐藏同一帧段。"
+        }
+      ]
+    },
+    {
+      "id": "conflict-002",
+      "timeSegment": {
+        "startMs": 5000,
+        "endMsExclusive": 6000,
+        "startTimecode": "00:00:05,000",
+        "endTimecode": "00:00:06,000"
+      },
+      "region": {
+        "forcedRegion": {
+          "x": 0.08,
+          "y": 0.72,
+          "width": 0.84,
+          "height": 0.12
+        },
+        "fullRegion": {
+          "x": 0.08,
+          "y": 0.8,
+          "width": 0.84,
+          "height": 0.12
+        },
+        "intersection": {
+          "x": 0.08,
+          "y": 0.8,
+          "width": 0.84,
+          "height": 0.04
+        },
+        "intersectionRatio": 0.3333,
+        "score": 0.3333
+      },
+      "tracks": {
+        "forced": {
+          "id": "forced-narrative",
+          "kind": "forced_narrative",
+          "source": "forced.srt",
+          "language": "zh-Hans",
+          "cueId": "2"
+        },
+        "full": {
+          "id": "full-subtitles",
+          "kind": "full",
+          "source": "full.srt",
+          "language": "zh-Hans",
+          "cueId": "2"
+        }
+      },
+      "text": {
+        "forcedText": "注意脚下",
+        "fullText": "<i>注意脚下</i>",
+        "normalizedForced": "注意脚下",
+        "normalizedFull": "注意脚下",
+        "editSimilarity": 1,
+        "containmentScore": 1,
+        "bigramDice": 1,
+        "similarity": 1,
+        "effectiveSimilarity": 1,
+        "shortTextAdjusted": false,
+        "shortestTextRunes": 4
+      },
+      "confidence": 0.8667,
+      "needsManualReview": false,
+      "frameEvidence": {
+        "fps": 25,
+        "overlap": {
+          "startFrame": 125,
+          "endFrameExclusive": 150,
+          "frameCount": 25
+        },
+        "forcedCue": {
+          "cueId": "2",
+          "startFrame": 125,
+          "endFrameExclusive": 150
+        },
+        "fullCue": {
+          "cueId": "2",
+          "startFrame": 125,
+          "endFrameExclusive": 150
+        },
+        "frameChecks": [
+          {
+            "frame": 125,
+            "forcedActive": true,
+            "fullActive": true
+          },
+          {
+            "frame": 137,
+            "forcedActive": true,
+            "fullActive": true
+          },
+          {
+            "frame": 149,
+            "forcedActive": true,
+            "fullActive": true
+          }
+        ]
+      },
+      "repairSuggestions": [
+        {
+          "priority": 1,
+          "action": "suppress_forced_narrative_overlap",
+          "trackId": "forced-narrative",
+          "cueIds": [
+            "2"
+          ],
+          "startFrame": 125,
+          "endFrameExclusive": 150,
+          "startTimecode": "00:00:05,000",
+          "endTimecode": "00:00:06,000",
+          "automatic": false,
+          "rationale": "保留完整字幕，仅在证据帧段内隐藏强制叙述；若整条均重合，可删除整条强制叙述 cue。"
+        },
+        {
+          "priority": 2,
+          "action": "suppress_full_subtitle_overlap",
+          "trackId": "full-subtitles",
+          "cueIds": [
+            "2"
+          ],
+          "startFrame": 125,
+          "endFrameExclusive": 150,
+          "startTimecode": "00:00:05,000",
+          "endTimecode": "00:00:06,000",
+          "automatic": false,
+          "rationale": "备选方案：若编辑策略要求保留强制叙述，则在完整字幕轨隐藏同一帧段。"
+        }
+      ]
+    },
+    {
+      "id": "conflict-003",
+      "timeSegment": {
+        "startMs": 20000,
+        "endMsExclusive": 22000,
+        "startTimecode": "00:00:20,000",
+        "endTimecode": "00:00:22,000"
+      },
+      "region": {
+        "forcedRegion": {
+          "x": 0.08,
+          "y": 0.72,
+          "width": 0.84,
+          "height": 0.12
+        },
+        "fullRegion": {
+          "x": 0.08,
+          "y": 0.8,
+          "width": 0.84,
+          "height": 0.12
+        },
+        "intersection": {
+          "x": 0.08,
+          "y": 0.8,
+          "width": 0.84,
+          "height": 0.04
+        },
+        "intersectionRatio": 0.3333,
+        "score": 0.3333
+      },
+      "tracks": {
+        "forced": {
+          "id": "forced-narrative",
+          "kind": "forced_narrative",
+          "source": "forced.srt",
+          "language": "zh-Hans",
+          "cueId": "5"
+        },
+        "full": {
+          "id": "full-subtitles",
+          "kind": "full",
+          "source": "full.srt",
+          "language": "zh-Hans",
+          "cueId": "5"
+        }
+      },
+      "text": {
+        "forcedText": "车门即将关闭",
+        "fullText": "车门即将关闭",
+        "normalizedForced": "车门即将关闭",
+        "normalizedFull": "车门即将关闭",
+        "editSimilarity": 1,
+        "containmentScore": 1,
+        "bigramDice": 1,
+        "similarity": 1,
+        "effectiveSimilarity": 1,
+        "shortTextAdjusted": false,
+        "shortestTextRunes": 6
+      },
+      "confidence": 0.8667,
+      "needsManualReview": false,
+      "frameEvidence": {
+        "fps": 25,
+        "overlap": {
+          "startFrame": 500,
+          "endFrameExclusive": 550,
+          "frameCount": 50
+        },
+        "forcedCue": {
+          "cueId": "5",
+          "startFrame": 500,
+          "endFrameExclusive": 550
+        },
+        "fullCue": {
+          "cueId": "5",
+          "startFrame": 500,
+          "endFrameExclusive": 550
+        },
+        "frameChecks": [
+          {
+            "frame": 500,
+            "forcedActive": true,
+            "fullActive": true
+          },
+          {
+            "frame": 525,
+            "forcedActive": true,
+            "fullActive": true
+          },
+          {
+            "frame": 549,
+            "forcedActive": true,
+            "fullActive": true
+          }
+        ]
+      },
+      "repairSuggestions": [
+        {
+          "priority": 1,
+          "action": "suppress_forced_narrative_overlap",
+          "trackId": "forced-narrative",
+          "cueIds": [
+            "5"
+          ],
+          "startFrame": 500,
+          "endFrameExclusive": 550,
+          "startTimecode": "00:00:20,000",
+          "endTimecode": "00:00:22,000",
+          "automatic": false,
+          "rationale": "保留完整字幕，仅在证据帧段内隐藏强制叙述；若整条均重合，可删除整条强制叙述 cue。"
+        },
+        {
+          "priority": 2,
+          "action": "suppress_full_subtitle_overlap",
+          "trackId": "full-subtitles",
+          "cueIds": [
+            "5"
+          ],
+          "startFrame": 500,
+          "endFrameExclusive": 550,
+          "startTimecode": "00:00:20,000",
+          "endTimecode": "00:00:22,000",
+          "automatic": false,
+          "rationale": "备选方案：若编辑策略要求保留强制叙述，则在完整字幕轨隐藏同一帧段。"
+        }
+      ]
+    }
+  ]
+}
