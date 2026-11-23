@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "sequence": {
+    "id": "mix-25",
+    "fps": "25"
+  },
+  "media": [
+    {
+      "id": "cam-a",
+      "fps": "23.976",
+      "frames": 3600
+    },
+    {
+      "id": "cam-b",
+      "fps": "25",
+      "frames": 2400
+    },
+    {
+      "id": "cam-c",
+      "fps": "30",
+      "frames": 3000
+    }
+  ],
+  "events": [
+    {
+      "id": "c01",
+      "kind": "clip",
+      "media": "cam-a",
+      "mediaInFrame": 0,
+      "mediaOutFrame": 240,
+      "speed": "1"
+    },
+    {
+      "id": "g01",
+      "kind": "gap",
+      "sequenceFrames": 7
+    },
+    {
+      "id": "c02",
+      "kind": "clip",
+      "media": "cam-b",
+      "mediaInFrame": 0,
+      "mediaOutFrame": 150,
+      "speed": "2"
+    },
+    {
+      "id": "g02",
+      "kind": "gap",
+      "sequenceFrames": 11
+    },
+    {
+      "id": "c03",
+      "kind": "clip",
+      "media": "cam-c",
+      "mediaInFrame": 0,
+      "mediaOutFrame": 300,
+      "speed": "1/2"
+    },
+    {
+      "id": "g03",
+      "kind": "gap",
+      "sequenceFrames": 5
+    },
+    {
+      "id": "c04",
+      "kind": "clip",
+      "media": "cam-a",
+      "mediaInFrame": 240,
+      "mediaOutFrame": 2640,
+      "speed": "3/2"
+    },
+    {
+      "id": "g04",
+      "kind": "gap",
+      "sequenceFrames": 13
+    },
+    {
+      "id": "c05",
+      "kind": "clip",
+      "media": "cam-b",
+      "mediaInFrame": 150,
+      "mediaOutFrame": 1150,
+      "speed": "1"
+    },
+    {
+      "id": "c06",
+      "kind": "clip",
+      "media": "cam-c",
+      "mediaInFrame": 300,
+      "mediaOutFrame": 480,
+      "speed": "2"
+    }
+  ]
+}
