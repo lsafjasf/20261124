@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0",
+  "name": "episode-A-v2",
+  "rate": 25,
+  "media": [
+    {"id": "m1", "name": "interview.mov", "path": "/media/interview.mov", "checksum": "sha256:aaaa", "duration": 600},
+    {"id": "m2", "name": "broll.mov", "path": "/media/broll.mov", "checksum": "sha256:bbbb", "duration": 300},
+    {"id": "m3", "name": "alt-take.mov", "path": "/media/alt-take.mov", "checksum": "sha256:cccc", "duration": 200}
+  ],
+  "tracks": [
+    {
+      "id": "V1",
+      "name": "Main Video",
+      "kind": "group",
+      "muted": true,
+      "children": [
+        {
+          "id": "V1-a",
+          "name": "A-roll",
+          "kind": "video",
+          "clips": [
+            {
+              "id": "c1",
+              "name": "opening",
+              "mediaId": "m1",
+              "timelineIn": 5,
+              "sourceIn": 10,
+              "sourceOut": 30,
+              "speed": 1,
+              "enabled": true,
+              "transition": {"id": "tr1", "type": "dissolve", "at": "head", "duration": 0.8, "params": {"softness": 0.4}},
+              "effects": [
+                {"id": "fx1", "type": "color-grade", "enabled": true, "params": {"exposure": 0.25, "contrast": 1.1}}
+              ]
+            },
+            {
+              "id": "c2",
+              "name": "broll-cut",
+              "mediaId": "m3",
+              "timelineIn": 24,
+              "sourceIn": 2,
+              "sourceOut": 9,
+              "speed": 1.5,
+              "enabled": true,
+              "effects": []
+            },
+            {
+              "id": "c2",
+              "name": "broll-cut",
+              "mediaId": "m2",
+              "timelineIn": 40,
+              "sourceIn": 0,
+              "sourceOut": 10,
+              "speed": 1,
+              "enabled": true,
+              "effects": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A1",
+      "name": "Audio 1",
+      "kind": "audio",
+      "clips": [
+        {
+          "id": "a1",
+          "name": "lav",
+          "mediaId": "m3",
+          "timelineIn": 0,
+          "sourceIn": 10,
+          "sourceOut": 30,
+          "speed": 1,
+          "enabled": true,
+          "effects": [
+            {"id": "afx1", "type": "gain", "enabled": true, "params": {"db": 0}}
+          ]
+        },
+        {
+          "id": "a2",
+          "name": "room-tone",
+          "mediaId": "m2",
+          "timelineIn": 48,
+          "sourceIn": 0,
+          "sourceOut": 8,
+          "speed": 1,
+          "enabled": true,
+          "effects": []
+        }
+      ]
+    }
+  ]
+}
