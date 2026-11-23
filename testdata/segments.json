@@ -1,0 +1,110 @@
+[
+  {
+    "type": "config",
+    "sequence": 1,
+    "config": {
+      "sceneId": "demo-scene",
+      "layouts": [
+        {
+          "id": "5.1",
+          "name": "5.1 surround",
+          "channels": [
+            {"id": "L"}, {"id": "R"}, {"id": "C"},
+            {"id": "LFE"}, {"id": "Ls"}, {"id": "Rs"}
+          ]
+        },
+        {
+          "id": "stereo",
+          "name": "Stereo",
+          "channels": [{"id": "L"}, {"id": "R"}]
+        }
+      ],
+      "programs": [
+        {
+          "id": "main",
+          "layoutId": "5.1",
+          "objectIds": ["voice", "ambience"]
+        }
+      ],
+      "objects": [
+        {
+          "id": "voice",
+          "layoutChannels": {
+            "5.1": ["C"],
+            "stereo": ["L", "R"]
+          }
+        },
+        {
+          "id": "ambience",
+          "layoutChannels": {
+            "5.1": ["Ls", "Rs"],
+            "stereo": ["L", "R"]
+          }
+        }
+      ],
+      "extensions": {
+        "x-vendor/scene-notes": {"revision": "A"}
+      }
+    }
+  },
+  {
+    "type": "update",
+    "sequence": 2,
+    "update": {
+      "programs": [
+        {"id": "main", "layoutId": "stereo"}
+      ]
+    }
+  },
+  {
+    "type": "update",
+    "sequence": 3,
+    "update": {
+      "deleteObjects": ["ambience"]
+    }
+  },
+  {
+    "type": "update",
+    "sequence": 4,
+    "update": {
+      "objects": [
+        {
+          "id": "ambience",
+          "layoutChannels": {
+            "stereo": ["L", "R"]
+          }
+        }
+      ],
+      "extensions": {
+        "x-vendor/update-token": 44
+      }
+    }
+  },
+  {
+    "type": "update",
+    "sequence": 5,
+    "update": {
+      "programs": [
+        {"id": "main", "layoutId": "7.1.4"}
+      ]
+    }
+  },
+  {
+    "type": "update",
+    "sequence": 6,
+    "update": {
+      "programs": [
+        {"id": "main", "layoutId": "5.1", "objectIds": ["voice", "ambience"]}
+      ],
+      "objects": [
+        {
+          "id": "ambience",
+          "layoutChannels": {
+            "5.1": ["Ls", "Rs"],
+            "stereo": ["L", "R"]
+          }
+        }
+      ]
+    }
+  }
+]
