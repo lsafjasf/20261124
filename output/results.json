@@ -1,0 +1,3080 @@
+[
+  {
+    "scenario": "isolated",
+    "pattern": "孤立丢包（单帧，间隔足够，FEC 可修复）",
+    "mode": "fec",
+    "output_wav": "output/isolated_fec.wav",
+    "metrics": {
+      "Frames": 60,
+      "LostFrames": 4,
+      "RecoveredFrames": 4,
+      "RecoveredSamples": 3840,
+      "MAE": 0.05107974306584035,
+      "RMSE": 0.12344306495110292,
+      "PeakAbs": 0.7793111642730686,
+      "SegSNRDB": 7.85968081042908
+    },
+    "state_sequence": ". . . . . . F . . . . . . . . . . . F . . . . . . . . . . . . . . . F . . . . . . . . . . . . . . F . . . . . . . . . .",
+    "state_chain": [
+      {
+        "Index": 0,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 1,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 2,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 3,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 4,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 5,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 6,
+        "State": "FEC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 7,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 8,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 9,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 10,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 11,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 12,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 13,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 14,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 15,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 16,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 17,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 18,
+        "State": "FEC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 19,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 20,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 21,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 22,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 23,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 24,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 25,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 26,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 27,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 28,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 29,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 30,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 31,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 32,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 33,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 34,
+        "State": "FEC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 35,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 36,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 37,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 38,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 39,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 40,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 41,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 42,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 43,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 44,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 45,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 46,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 47,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 48,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 49,
+        "State": "FEC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 50,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 51,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 52,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 53,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 54,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 55,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 56,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 57,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 58,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 59,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      }
+    ],
+    "loss_events": [
+      [
+        6,
+        6
+      ],
+      [
+        18,
+        18
+      ],
+      [
+        34,
+        34
+      ],
+      [
+        49,
+        49
+      ]
+    ]
+  },
+  {
+    "scenario": "isolated",
+    "pattern": "孤立丢包（单帧，间隔足够，FEC 可修复）",
+    "mode": "silence",
+    "output_wav": "output/isolated_silence.wav",
+    "metrics": {
+      "Frames": 60,
+      "LostFrames": 4,
+      "RecoveredFrames": 4,
+      "RecoveredSamples": 3840,
+      "MAE": 0.25969304510103186,
+      "RMSE": 0.30510599191592086,
+      "PeakAbs": 0.7073577529514345,
+      "SegSNRDB": 0
+    },
+    "state_sequence": ". . . . . . S . . . . . . . . . . . S . . . . . . . . . . . . . . . S . . . . . . . . . . . . . . S . . . . . . . . . .",
+    "state_chain": [
+      {
+        "Index": 0,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 1,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 2,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 3,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 4,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 5,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 6,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 7,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 8,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 9,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 10,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 11,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 12,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 13,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 14,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 15,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 16,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 17,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 18,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 19,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 20,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 21,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 22,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 23,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 24,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 25,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 26,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 27,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 28,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 29,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 30,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 31,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 32,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 33,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 34,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 35,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 36,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 37,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 38,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 39,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 40,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 41,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 42,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 43,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 44,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 45,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 46,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 47,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 48,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 49,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 50,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 51,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 52,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 53,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 54,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 55,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 56,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 57,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 58,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 59,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      }
+    ],
+    "loss_events": [
+      [
+        6,
+        6
+      ],
+      [
+        18,
+        18
+      ],
+      [
+        34,
+        34
+      ],
+      [
+        49,
+        49
+      ]
+    ]
+  },
+  {
+    "scenario": "isolated",
+    "pattern": "孤立丢包（单帧，间隔足够，FEC 可修复）",
+    "mode": "plc",
+    "output_wav": "output/isolated_plc.wav",
+    "metrics": {
+      "Frames": 60,
+      "LostFrames": 4,
+      "RecoveredFrames": 4,
+      "RecoveredSamples": 3840,
+      "MAE": 0.08441593181958645,
+      "RMSE": 0.11312001089894472,
+      "PeakAbs": 0.45640196188448856,
+      "SegSNRDB": 8.618225969053961
+    },
+    "state_sequence": ". . . . . . P R . . . . . . . . . . P R . . . . . . . . . . . . . . P R . . . . . . . . . . . . . P R . . . . . . . . .",
+    "state_chain": [
+      {
+        "Index": 0,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 1,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 2,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 3,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 4,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 5,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 6,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 662
+      },
+      {
+        "Index": 7,
+        "State": "FADE_IN",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 8,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 9,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 10,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 11,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 12,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 13,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 14,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 15,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 16,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 17,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 18,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 948
+      },
+      {
+        "Index": 19,
+        "State": "FADE_IN",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 20,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 21,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 22,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 23,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 24,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 25,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 26,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 27,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 28,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 29,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 30,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 31,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 32,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 33,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 34,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 697
+      },
+      {
+        "Index": 35,
+        "State": "FADE_IN",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 36,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 37,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 38,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 39,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 40,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 41,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 42,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 43,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 44,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 45,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 46,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 47,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 48,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 49,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 831
+      },
+      {
+        "Index": 50,
+        "State": "FADE_IN",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 51,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 52,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 53,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 54,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 55,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 56,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 57,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 58,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 59,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      }
+    ],
+    "loss_events": [
+      [
+        6,
+        6
+      ],
+      [
+        18,
+        18
+      ],
+      [
+        34,
+        34
+      ],
+      [
+        49,
+        49
+      ]
+    ]
+  },
+  {
+    "scenario": "burst",
+    "pattern": "连续丢包（两段 4 帧突发，共 8 帧）",
+    "mode": "fec",
+    "output_wav": "output/burst_fec.wav",
+    "metrics": {
+      "Frames": 60,
+      "LostFrames": 8,
+      "RecoveredFrames": 8,
+      "RecoveredSamples": 7680,
+      "MAE": 0.12383824943857083,
+      "RMSE": 0.18544011281379885,
+      "PeakAbs": 0.7452231609629798,
+      "SegSNRDB": 0.9756004934173963
+    },
+    "state_sequence": ". . . . . . . . . . p p p F . . . . . . . . . . . . . . . . . . . . . . . . . . p p p F . . . . . . . . . . . . . . . .",
+    "state_chain": [
+      {
+        "Index": 0,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 1,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 2,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 3,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 4,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 5,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 6,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 7,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 8,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 9,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 10,
+        "State": "FEC_FALLBACK_PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 675
+      },
+      {
+        "Index": 11,
+        "State": "FEC_FALLBACK_PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.6309573444801932,
+        "PitchLag": 675
+      },
+      {
+        "Index": 12,
+        "State": "FEC_FALLBACK_PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.5011872336272722,
+        "PitchLag": 675
+      },
+      {
+        "Index": 13,
+        "State": "FEC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 14,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 15,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 16,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 17,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 18,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 19,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 20,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 21,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 22,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 23,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 24,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 25,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 26,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 27,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 28,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 29,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 30,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 31,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 32,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 33,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 34,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 35,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 36,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 37,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 38,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 39,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 40,
+        "State": "FEC_FALLBACK_PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 743
+      },
+      {
+        "Index": 41,
+        "State": "FEC_FALLBACK_PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.6309573444801932,
+        "PitchLag": 743
+      },
+      {
+        "Index": 42,
+        "State": "FEC_FALLBACK_PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.5011872336272722,
+        "PitchLag": 743
+      },
+      {
+        "Index": 43,
+        "State": "FEC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 44,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 45,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 46,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 47,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 48,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 49,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 50,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 51,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 52,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 53,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 54,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 55,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 56,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 57,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 58,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 59,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      }
+    ],
+    "loss_events": [
+      [
+        10,
+        13
+      ],
+      [
+        40,
+        43
+      ]
+    ]
+  },
+  {
+    "scenario": "burst",
+    "pattern": "连续丢包（两段 4 帧突发，共 8 帧）",
+    "mode": "silence",
+    "output_wav": "output/burst_silence.wav",
+    "metrics": {
+      "Frames": 60,
+      "LostFrames": 8,
+      "RecoveredFrames": 8,
+      "RecoveredSamples": 7680,
+      "MAE": 0.1752159644811801,
+      "RMSE": 0.20748356787926783,
+      "PeakAbs": 0.5339233040430145,
+      "SegSNRDB": 0
+    },
+    "state_sequence": ". . . . . . . . . . S S S S . . . . . . . . . . . . . . . . . . . . . . . . . . S S S S . . . . . . . . . . . . . . . .",
+    "state_chain": [
+      {
+        "Index": 0,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 1,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 2,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 3,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 4,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 5,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 6,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 7,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 8,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 9,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 10,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 11,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 12,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 13,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 14,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 15,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 16,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 17,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 18,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 19,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 20,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 21,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 22,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 23,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 24,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 25,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 26,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 27,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 28,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 29,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 30,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 31,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 32,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 33,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 34,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 35,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 36,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 37,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 38,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 39,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 40,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 41,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 42,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 43,
+        "State": "SILENCE",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 44,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 45,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 46,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 47,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 48,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 49,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 50,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 51,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 52,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 53,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 54,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 55,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 56,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 57,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 58,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 59,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      }
+    ],
+    "loss_events": [
+      [
+        10,
+        13
+      ],
+      [
+        40,
+        43
+      ]
+    ]
+  },
+  {
+    "scenario": "burst",
+    "pattern": "连续丢包（两段 4 帧突发，共 8 帧）",
+    "mode": "plc",
+    "output_wav": "output/burst_plc.wav",
+    "metrics": {
+      "Frames": 60,
+      "LostFrames": 8,
+      "RecoveredFrames": 8,
+      "RecoveredSamples": 7680,
+      "MAE": 0.15370876124148658,
+      "RMSE": 0.20203723306521465,
+      "PeakAbs": 0.7452231609629798,
+      "SegSNRDB": 0.2310459070688521
+    },
+    "state_sequence": ". . . . . . . . . . P P P P R . . . . . . . . . . . . . . . . . . . . . . . . . P P P P R . . . . . . . . . . . . . . .",
+    "state_chain": [
+      {
+        "Index": 0,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 1,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 2,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 3,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 4,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 5,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 6,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 7,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 8,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 9,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 10,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 675
+      },
+      {
+        "Index": 11,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.6309573444801932,
+        "PitchLag": 675
+      },
+      {
+        "Index": 12,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.5011872336272722,
+        "PitchLag": 675
+      },
+      {
+        "Index": 13,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.3981071705534972,
+        "PitchLag": 675
+      },
+      {
+        "Index": 14,
+        "State": "FADE_IN",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 15,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 16,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 17,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 18,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 19,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 20,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 21,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 22,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 23,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 24,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 25,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 26,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 27,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 28,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 29,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 30,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 31,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 32,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 33,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 34,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 35,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 36,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 37,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 38,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 39,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 40,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.7943282347242815,
+        "PitchLag": 743
+      },
+      {
+        "Index": 41,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.6309573444801932,
+        "PitchLag": 743
+      },
+      {
+        "Index": 42,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.5011872336272722,
+        "PitchLag": 743
+      },
+      {
+        "Index": 43,
+        "State": "PLC",
+        "Lost": true,
+        "Samples": 960,
+        "Gain": 0.3981071705534972,
+        "PitchLag": 743
+      },
+      {
+        "Index": 44,
+        "State": "FADE_IN",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 45,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 46,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 47,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 48,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 49,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 50,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 51,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 52,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 53,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 54,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 55,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 56,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 57,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 58,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      },
+      {
+        "Index": 59,
+        "State": "OK",
+        "Lost": false,
+        "Samples": 0,
+        "Gain": 0,
+        "PitchLag": 0
+      }
+    ],
+    "loss_events": [
+      [
+        10,
+        13
+      ],
+      [
+        40,
+        43
+      ]
+    ]
+  }
+]
