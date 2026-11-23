@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "method": "container metadata only; no OCR, no inferred dialogue",
+  "source": {
+    "index_path": "dist/demo/source/demo.idx",
+    "sub_path": "dist/demo/source/demo.sub",
+    "index_sha256": "9fbf600daa5343a25108671d476ed5b375d9620ef1612506521b0b3a3c372fcd",
+    "sub_sha256": "963df9c44b9f22035a167f7f1af3a03a1764e69d42a9db7b32daad5a3007bb5f",
+    "width": 720,
+    "height": 480
+  },
+  "summary": {
+    "total": 4,
+    "migrated": 2,
+    "not_migrated": 2,
+    "outline_or_shadow": 2,
+    "animation": 1,
+    "decode_error": 0
+  },
+  "cues": [
+    {
+      "index": 1,
+      "start_ms": 1000,
+      "end_ms": 2502,
+      "start": "00:00:01.000",
+      "end": "00:00:02.502",
+      "filepos": "0x0",
+      "rect": {
+        "x": 100,
+        "y": 390,
+        "width": 64,
+        "height": 16
+      },
+      "flags": [
+        "text_not_recognized_no_ocr"
+      ],
+      "migratable": true,
+      "colors": [
+        {
+          "index": 1,
+          "rgb": "#FFFFFF",
+          "alpha": 255,
+          "pixels": 568,
+          "area": 568,
+          "dominant": true
+        }
+      ],
+      "original_image": "original/0001.png",
+      "original_frame": "original/0001_frame.png",
+      "raw_spu": "raw/0001.spu",
+      "ass_event": {
+        "start_ms": 1000,
+        "end_ms": 2500,
+        "start_delta_ms": 0,
+        "end_delta_ms": -2,
+        "x": 100,
+        "y": 390,
+        "color": "#FFFFFF",
+        "ass_alpha": 0
+      },
+      "verification": {
+        "index": 1,
+        "ass_start_ms": 1000,
+        "ass_end_ms": 2500,
+        "source_start_delta_ms": 0,
+        "source_end_delta_ms": -2,
+        "in_image": "composite/0001_in.png",
+        "last_image": "composite/0001_last.png",
+        "out_image": "composite/0001_out.png",
+        "in_sha256": "ae10219982ae81b801e1aec1b4b5f9d6b1e781b660d96c0dff603f6a8d460ff1",
+        "last_sha256": "ae10219982ae81b801e1aec1b4b5f9d6b1e781b660d96c0dff603f6a8d460ff1",
+        "out_sha256": "a1df2dc8b24bac78c62c214c9cf7dd648877c4532d4dd7de0ff0af8ac2272547",
+        "pixel_match": true
+      }
+    },
+    {
+      "index": 2,
+      "start_ms": 3000,
+      "end_ms": 4502,
+      "start": "00:00:03.000",
+      "end": "00:00:04.502",
+      "filepos": "0x1000",
+      "rect": {
+        "x": 260,
+        "y": 382,
+        "width": 72,
+        "height": 18
+      },
+      "flags": [
+        "text_not_recognized_no_ocr",
+        "outline_or_shadow_or_antialias"
+      ],
+      "migratable": true,
+      "colors": [
+        {
+          "index": 1,
+          "rgb": "#FFFFFF",
+          "alpha": 255,
+          "pixels": 777,
+          "area": 777,
+          "dominant": true
+        },
+        {
+          "index": 2,
+          "rgb": "#DC2020",
+          "alpha": 255,
+          "pixels": 160,
+          "area": 160,
+          "dominant": false
+        }
+      ],
+      "original_image": "original/0002.png",
+      "original_frame": "original/0002_frame.png",
+      "raw_spu": "raw/0002.spu",
+      "ass_event": {
+        "start_ms": 3000,
+        "end_ms": 4500,
+        "start_delta_ms": 0,
+        "end_delta_ms": -2,
+        "x": 260,
+        "y": 382,
+        "color": "#FFFFFF",
+        "ass_alpha": 0
+      },
+      "verification": {
+        "index": 2,
+        "ass_start_ms": 3000,
+        "ass_end_ms": 4500,
+        "source_start_delta_ms": 0,
+        "source_end_delta_ms": -2,
+        "in_image": "composite/0002_in.png",
+        "last_image": "composite/0002_last.png",
+        "out_image": "composite/0002_out.png",
+        "in_sha256": "605293633549722142dc04dbdb1b54482a152732a9bb956ff8f8300b23279f3c",
+        "last_sha256": "605293633549722142dc04dbdb1b54482a152732a9bb956ff8f8300b23279f3c",
+        "out_sha256": "a1df2dc8b24bac78c62c214c9cf7dd648877c4532d4dd7de0ff0af8ac2272547",
+        "pixel_match": true
+      }
+    },
+    {
+      "index": 3,
+      "start_ms": 5000,
+      "end_ms": 7002,
+      "start": "00:00:05.000",
+      "end": "00:00:07.002",
+      "filepos": "0x2000",
+      "rect": {
+        "x": 430,
+        "y": 370,
+        "width": 56,
+        "height": 16
+      },
+      "flags": [
+        "text_not_recognized_no_ocr",
+        "animation",
+        "outline_or_shadow_or_antialias"
+      ],
+      "migratable": false,
+      "colors": [
+        {
+          "index": 1,
+          "rgb": "#FFFFFF",
+          "alpha": 255,
+          "pixels": 488,
+          "area": 488,
+          "dominant": true
+        },
+        {
+          "index": 2,
+          "rgb": "#DC2020",
+          "alpha": 255,
+          "pixels": 124,
+          "area": 124,
+          "dominant": false
+        }
+      ],
+      "original_image": "original/0003.png",
+      "original_frame": "original/0003_frame.png",
+      "raw_spu": "raw/0003.spu",
+      "state_images": [
+        {
+          "label": "state_01 @ 0 ms",
+          "path": "original/0003_state_01.png"
+        },
+        {
+          "label": "state_01 frame @ 0 ms",
+          "path": "original/0003_state_01_frame.png"
+        },
+        {
+          "label": "state_02 @ 1001 ms",
+          "path": "original/0003_state_02.png"
+        },
+        {
+          "label": "state_02 frame @ 1001 ms",
+          "path": "original/0003_state_02_frame.png"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "start_ms": 8000,
+      "end_ms": 8000,
+      "start": "00:00:08.000",
+      "end": "00:00:08.000",
+      "filepos": "0x3000",
+      "rect": {
+        "x": 590,
+        "y": 390,
+        "width": 60,
+        "height": 14
+      },
+      "flags": [
+        "text_not_recognized_no_ocr",
+        "timing_missing_stop"
+      ],
+      "notes": [
+        "SPU has no stop-display command; end time is not guessed"
+      ],
+      "migratable": false,
+      "colors": [
+        {
+          "index": 1,
+          "rgb": "#FFFFFF",
+          "alpha": 255,
+          "pixels": 420,
+          "area": 420,
+          "dominant": true
+        }
+      ],
+      "original_image": "original/0004.png",
+      "original_frame": "original/0004_frame.png",
+      "raw_spu": "raw/0004.spu"
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "rounds": 3,
+    "checks": 48,
+    "checks_per_round": 16,
+    "failures": [],
+    "cues": [
+      {
+        "index": 1,
+        "ass_start_ms": 1000,
+        "ass_end_ms": 2500,
+        "source_start_delta_ms": 0,
+        "source_end_delta_ms": -2,
+        "in_image": "composite/0001_in.png",
+        "last_image": "composite/0001_last.png",
+        "out_image": "composite/0001_out.png",
+        "in_sha256": "ae10219982ae81b801e1aec1b4b5f9d6b1e781b660d96c0dff603f6a8d460ff1",
+        "last_sha256": "ae10219982ae81b801e1aec1b4b5f9d6b1e781b660d96c0dff603f6a8d460ff1",
+        "out_sha256": "a1df2dc8b24bac78c62c214c9cf7dd648877c4532d4dd7de0ff0af8ac2272547",
+        "pixel_match": true
+      },
+      {
+        "index": 2,
+        "ass_start_ms": 3000,
+        "ass_end_ms": 4500,
+        "source_start_delta_ms": 0,
+        "source_end_delta_ms": -2,
+        "in_image": "composite/0002_in.png",
+        "last_image": "composite/0002_last.png",
+        "out_image": "composite/0002_out.png",
+        "in_sha256": "605293633549722142dc04dbdb1b54482a152732a9bb956ff8f8300b23279f3c",
+        "last_sha256": "605293633549722142dc04dbdb1b54482a152732a9bb956ff8f8300b23279f3c",
+        "out_sha256": "a1df2dc8b24bac78c62c214c9cf7dd648877c4532d4dd7de0ff0af8ac2272547",
+        "pixel_match": true
+      }
+    ]
+  }
+}
