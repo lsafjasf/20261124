@@ -1,0 +1,46 @@
+{
+  "name": "reel_500s_23976",
+  "description": "500 s reel at 24000/1001 fps. The last cue ends exactly on the final frame; the legacy 24 fps interpretation makes it vanish 0.5 s early.",
+  "video_rate": "24000/1001",
+  "nominal_rate": "24",
+  "pts_timebase": "90000",
+  "intermediate": "ass-cs",
+  "cues": [
+    {
+      "id": "c001",
+      "start_frame": 0,
+      "end_frame": 24,
+      "text": "第一秒"
+    },
+    {
+      "id": "c002",
+      "start_frame": 24,
+      "end_frame": 48,
+      "text": "第二秒"
+    },
+    {
+      "id": "c003",
+      "start_frame": 240,
+      "end_frame": 264,
+      "text": "十秒检查点"
+    },
+    {
+      "id": "c004",
+      "start_frame": 2400,
+      "end_frame": 2424,
+      "text": "百秒检查点"
+    },
+    {
+      "id": "c005",
+      "start_frame": 5994,
+      "end_frame": 6018,
+      "text": "二百五十秒检查点"
+    },
+    {
+      "id": "c006",
+      "start_frame": 11940,
+      "end_frame": 11988,
+      "text": "片尾最后一条字幕"
+    }
+  ]
+}
